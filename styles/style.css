@@ -182,3 +182,32 @@ body {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
+
+.location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.location h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.location-card {
+  width: 90%;
+  height: 369px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+}
+
+.map {
+  width: 100%;
+  height: 369px;
+}
