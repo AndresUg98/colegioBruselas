@@ -211,3 +211,31 @@ body {
   width: 100%;
   height: 369px;
 }
+
+
+.footer{
+  width: 100%;
+  height: 84px;
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+  justify-items: center;
+
+  background-color: #0c3aaf;
+
+}
+
+.social-icon_container{
+  margin: 0;
+  width: 44px;
+  height: 44px;
+  
+}
+
+.social-icon_container img{
+
+  width: 100%;
+}
