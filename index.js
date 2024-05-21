@@ -1,17 +1,8 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     var slides = document.querySelectorAll(".slide");
-//     var currentSlide = 0;
-  
-//     function showSlide(n) {
-//       slides[currentSlide].classList.remove("active");
-//       currentSlide = (n + slides.length) % slides.length;
-//       slides[currentSlide].classList.add("active");
-//     }
-  
-//     function nextSlide() {
-//       showSlide(currentSlide + 1);
-//     }
-  
-//     setInterval(nextSlide, 3000); // Cambia la imagen cada 3 segundos
-//   });
-  
+const hamMenu = document.querySelector(".hamMenu");
+
+const offScreenMenu = document.querySelector(".off-screen-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  offScreenMenu.classList.toggle("active");
+});

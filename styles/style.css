@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 body {
   margin: 0;
   padding: 0;
@@ -37,25 +45,79 @@ body {
   height: 48px;
 }
 
+.off-screen-menu {
+  background-color: #002a95db;
+  height: 100vh;
+  width: 80%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
 
-.navbar-right{
+  color: white;
+  font-weight: 700;
+}
+.off-screen-menu.active {
+  right: 0px;
+}
 
+.off-screen-menu ul {
+  padding: 0;
+}
+
+.navbar-right {
   width: 100%;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
-.hamMenu{
+.hamMenu {
   margin: 0;
   width: 43px;
   height: 25px;
-
-  display: flex;
-  justify-items: center;
-  align-items: center;
+  position: fixed;
+  z-index: 2;
 }
-.hamMenu img{
+.hamMenu span {
+  height: 3px;
   width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+
+.hamMenu span:nth-child(1) {
+  top: 10%;
+}
+
+.hamMenu span:nth-child(3) {
+  top: 90%;
+}
+
+.hamMenu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamMenu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamMenu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .carousel-container {
@@ -233,11 +295,9 @@ body {
   height: 369px;
 }
 
-
-.footer{
+.footer {
   width: 100%;
   height: 84px;
-
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -246,17 +306,14 @@ body {
   justify-items: center;
 
   background-color: #0c3aaf;
-
 }
 
-.social-icon_container{
+.social-icon_container {
   margin: 0;
   width: 44px;
   height: 44px;
-  
 }
 
-.social-icon_container img{
-
+.social-icon_container img {
   width: 100%;
 }
