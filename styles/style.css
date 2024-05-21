@@ -37,6 +37,27 @@ body {
   height: 48px;
 }
 
+
+.navbar-right{
+
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.hamMenu{
+  margin: 0;
+  width: 43px;
+  height: 25px;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.hamMenu img{
+  width: 100%;
+}
+
 .carousel-container {
   width: 100%;
   position: relative;
