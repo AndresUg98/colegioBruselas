@@ -76,7 +76,7 @@ body {
 .navbar-right {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 .hamMenu {
@@ -84,6 +84,7 @@ body {
   width: 43px;
   height: 25px;
   position: fixed;
+  right: 5%;
   z-index: 2;
 }
 .hamMenu span {
@@ -145,7 +146,7 @@ body {
   height: 546px;
   flex: 1 0 100%;
   scroll-snap-align: start;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .slider-nav {
@@ -234,6 +235,7 @@ body {
   margin-top: 150px;
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .MV-item {
@@ -316,4 +318,63 @@ body {
 
 .social-icon_container img {
   width: 100%;
+}
+
+@media (min-width: 400px) {
+  .navbar {
+    grid-template-columns: 1fr 0.5fr;
+  }
+}
+
+@media (min-width: 700px) {
+  .navbar {
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .off-screen-menu {
+    background-color: #002a95db;
+    height: 52px;
+    width: 100%;
+    background-color: transparent;
+    right: 0px;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 1rem;
+    transition: none;
+
+    position: absolute;
+  }
+
+  .hamMenu {
+    margin: 0;
+    width: 0;
+    height: 0;
+
+    z-index: 0;
+  }
+
+  .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 50px;
+  }
+
+  .MV-container {
+    width: 100%;
+    margin-top: 150px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .MV-card {
+    height: 450px;
+  }
+
+  .MV-card img {
+    height: 45%;
+  }
 }
