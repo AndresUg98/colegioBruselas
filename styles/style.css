@@ -374,7 +374,79 @@ body {
     height: 450px;
   }
 
+  .value-item_card {
+    height: 240px;
+  }
+
   .MV-card img {
     height: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    grid-template-columns: 1fr 0.5fr;
+  }
+
+  .off-screen-menu {
+    background-color: #002a95db;
+    height: 52px;
+    width: 100%;
+    background-color: transparent;
+    right: 0px;
+
+    flex-direction: row;
+    justify-content: space-around;
+
+    font-size: 1rem;
+    transition: none;
+
+    position: absolute;
+  }
+
+  .hamMenu {
+    margin: 0;
+    width: 0;
+    height: 0;
+
+    z-index: 0;
+  }
+
+  .values {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 100px;
+    column-gap: 50px;
+  }
+
+  .MV-container {
+    width: 100%;
+    margin-top: 150px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .MV-card {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+    height: 250px;
+    width: 600px;
+  }
+
+  .MV-card img {
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+  }
+
+  .map {
+    height: 500px;
+  }
+
+  .location-card {
+    height: 500px;
   }
 }
