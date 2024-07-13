@@ -54,7 +54,7 @@ body {
   position: fixed;
   top: 0;
   right: -450px;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +86,7 @@ body {
   height: 25px;
   position: fixed;
   right: 5%;
-  z-index: 2;
+  z-index: 4;
 }
 .hamMenu span {
   height: 3px;
@@ -133,6 +133,17 @@ body {
     rgba(117, 117, 117, 0.2777485994397759) 49%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+.carousel-container h2{
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.25rem;
+  color: white; 
+  background-color: transparent;
+  margin: 0;
+  bottom: 25%;
+  z-index: 3;
 }
 
 .slider {
@@ -300,6 +311,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 70px;
 }
 
 .location {
@@ -307,7 +319,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 
@@ -483,6 +495,10 @@ body {
     z-index: 0;
   }
 
+  .carousel-container h2{
+    font-size: 4.5rem;
+  }
+
   .slider img {
     height: 800px;
   }
@@ -525,28 +541,23 @@ body {
     width: 250px;
   }
 
-  .LG-container{
-    margin-bottom: 0;
-    flex-direction: row;
-  }
+
 
   .map {
     height: 500px;
   }
 
-  .location{
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+
 
   .location-card {
     height: 500px;
   }
 
 
-
-  .gallery-container{
-    margin-bottom: 0;
+  .gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
+
+
 
 }
